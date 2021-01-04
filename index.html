@@ -7,6 +7,7 @@
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="jquery.maphilight.min.js"></script>
+	<script type="text/javascript" src="jquery.rwdImageMaps.min.js"></script>
 
 	<style>
 		@font-face {
@@ -89,6 +90,10 @@
 			width: 100%;
 			margin: auto;
 			position: relative;
+		}
+
+		main img {
+			height: 100%;
 		}
 
 		.popup {
@@ -199,6 +204,7 @@
 
 	<script>
 		$(document).ready(function () {
+			$('img[usemap]').rwdImageMaps();
 			$('img').maphilight({
 				strokeColor: 'ffffff',
 				strokeWidth: 2
