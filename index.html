@@ -31,11 +31,11 @@
 
 		.container {
 			height: 100%;
+			padding: 2rem;
 		}
 
 		header {
 			height: 100%;
-			padding: 5rem 3rem;
 			position: relative;
 			text-align: center;
 		}
@@ -44,7 +44,7 @@
 			font-size: 5rem;
 			line-height: 1.7;
 			text-align: center;
-			height: 80%;
+			/* height: 80%; */
 		}
 
 		#fb {
@@ -57,15 +57,18 @@
 		}
 
 		.scroll-hint {
-			height: 10%;
 			text-align: center;
 		}
 
 		.scroll-hint img {
-			width: 2rem;
-			margin: 1rem;
+			width: 4rem;
+			margin: 2rem;
 			animation: UpDown 1s ease-in-out infinite;
 			cursor: pointer;
+		}
+
+		.scroll-hint img:hover {
+			animation: none;
 		}
 
 		@keyframes UpDown {
@@ -86,7 +89,6 @@
 			text-align: -webkit-center;
 			margin: auto;
 			position: relative;
-			padding: 3rem 5rem;
 		}
 
 		main img {
