@@ -104,14 +104,17 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			background-color: white;
-			padding: 2rem 4rem;
+			padding: 2rem 3rem;
 			border-radius: 0.2rem;
 			opacity: 0.9;
 		}
 
-		#fortune p {
+		#fortune-text {
 			font-size: 1.7rem;
 			line-height: 1.4;
+			color: white;
+			background-color: black;
+			padding: 0.5rem 1rem;
 		}
 
 		#close {
@@ -176,7 +179,8 @@
 			</map>
 
 			<div id="fortune">
-				<p></p>
+				<h2>Your Fortune</h2>
+				<p id="fortune-text"></p>
 				<span id="close">&#x2715;</span>
 			</div>
 		</main>
@@ -207,7 +211,7 @@
 				$('#fortune').hide();
 				if (!$(this).hasClass('selected')) {
 					$('#fortune').show();
-					$('#fortune p').text(fortunesList[Math.floor(Math.random() * fortunesList.length)]);
+					$('#fortune-text').text(fortunesList[Math.floor(Math.random() * fortunesList.length)]);
 					$(this).data('maphilight', { alwaysOn: true }).trigger('alwaysOn.maphilight');
 					$(this).addClass('selected');
 					selected++;
@@ -269,7 +273,7 @@
 			"Nothing astonishes men so much as common sense and plain dealing.",
 			"Its amazing how much good you can do if you dont care who gets the credit.",
 			"Everyone agrees. You are the best.",
-			"LIFE CONSISTS NOT IN HOLDING GOOD CARDS, BUT IN PLAYING THOSE YOU HOLD WELL.",
+			"Life consist not in holding good cards, but in playing those you hold well.",
 			"Jealousy doesn't open doors, it closes them!",
 			"It's better to be alone sometimes.",
 			"When fear hurts you, conquer it and defeat it!",
