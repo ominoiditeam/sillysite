@@ -30,16 +30,7 @@
 		}
 
 		.container {
-			scroll-snap-type: y mandatory;
-			scroll-snap-stop: always;
-			overflow-y: auto;
 			height: 100%;
-		}
-
-		header,
-		main,
-		footer {
-			scroll-snap-align: center;
 		}
 
 		header {
@@ -267,7 +258,7 @@
 			});
 
 			$('.scroll-hint img').click(function (e) {
-				$('map area')[0].scrollIntoView({ behavior: 'smooth' });
+				$('map area')[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
 			});
 		});
 
