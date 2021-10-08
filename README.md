@@ -1,1 +1,1 @@
-# sillysite
+# sillysite [LIVE](https://wastedtime.online/)
